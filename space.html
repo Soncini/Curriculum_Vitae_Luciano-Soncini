@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Lunar Space Station: Portal of the Galaxies{% endblock %}
+
+{% block content %}
+<h1>Lunar Space Station: Portal of the Galaxies</h1>
+<p>
+    This idea envisions a modular and self-sustaining lunar base, utilizing local materials (lunar regolith) for construction 
+    and high-efficiency solar energy systems. The station will serve as a hub for space exploration, scientific research, and future missions to Mars.
+</p>
+
+<h2>Gallery</h2>
+<div class="gallery">
+    <img src="{{ url_for('static', filename='images/space1.jpeg') }}" alt="Lunar Base Design">
+    <img src="{{ url_for('static', filename='images/space2.jpeg') }}" alt="Solar Panels on the Moon">
+    <img src="{{ url_for('static', filename='images/space3.jpeg') }}" alt="Astronauts Working">
+</div>
+{% endblock %}
